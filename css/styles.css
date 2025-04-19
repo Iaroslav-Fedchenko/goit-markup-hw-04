@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
 }
+
 * {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 header {
   margin: 0 auto;
 }
@@ -122,10 +124,17 @@ body {
   transition-property: translateY();
   transition-duration: 250ms;
 }
+
 .activa-link {
   color: #404bbf;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.activa-link:hover::after {
+
+.link-stud {
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.activa-link::after {
   content: "";
   display: inline-block;
   height: 4px;
@@ -133,19 +142,22 @@ body {
   border-radius: 2px;
   background-color: #404bbf;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 0;
 }
+
 .title-button {
   display: flex;
   flex-direction: column;
   gap: 48px;
 }
+
 .stud:hover,
 .stud:focus {
   color: #404bbf;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .antena,
 .clock,
 .diagram,
@@ -160,6 +172,7 @@ body {
   justify-content: center;
   margin-bottom: 8px;
 }
+
 .adres {
   font-style: normal;
   padding-left: auto;
@@ -173,11 +186,14 @@ body {
   color: #434455;
   transition-property: translateY();
   transition-duration: 250ms;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .link:hover,
 .link:focus {
   color: #404bbf;
 }
+
 .social-media {
   display: flex;
   align-items: center;
@@ -187,6 +203,7 @@ body {
   width: 232px;
   height: 40px;
 }
+
 .icon-instagram,
 .icon-twitter,
 .icon-facebook,
@@ -196,11 +213,13 @@ body {
   justify-content: center;
   fill: #ffffff;
 }
+
 .border:hover,
 .border-foot:hover {
   background-color: #31d0aa;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .border {
   display: flex;
   width: 40px;
@@ -215,6 +234,7 @@ body {
   transition-property: translateY();
   transition-duration: 250ms;
 }
+
 .border-foot {
   display: flex;
   width: 40px;
@@ -229,12 +249,11 @@ body {
   transition-property: translateY();
   transition-duration: 250ms;
 }
+
 .title-section {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office\ 1.jpg);
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
+    url(../images/people-office.jpg);
   padding-bottom: 60px;
   padding: 188px 0;
   background-size: cover;
@@ -244,6 +263,7 @@ body {
   justify-content: center;
   margin: 0 auto;
 }
+
 .visualli-hidden {
   position: absolute;
   color: rgba(0, 0, 0, 0);
@@ -311,6 +331,7 @@ body {
   margin-bottom: 8px;
   text-align: center;
 }
+
 .list-soc-footer {
   font-weight: 500;
   font-size: 16px;
@@ -319,10 +340,12 @@ body {
   color: #ffffff;
   margin-bottom: 16px;
 }
+
 .social-media-footer {
   display: flex;
   flex-direction: column;
 }
+
 .list-teams {
   background-color: #ffffff;
   font-weight: 500;
@@ -404,6 +427,12 @@ body {
   margin-bottom: 8px;
 }
 
+.div-app:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16),
+    0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .section-app {
   background-color: #f4f4fd;
   padding: 120px 0;
@@ -453,16 +482,19 @@ body {
   /* margin-left: 156px; */
   background-color: #2e2f42;
 }
+
 .footer-container {
   display: flex;
   gap: 120px;
   align-items: baseline;
 }
+
 .footer-logo {
   display: flex;
   flex-direction: column;
   margin-right: 120px;
 }
+
 .overlay {
   position: absolute;
   top: 0;
@@ -479,6 +511,16 @@ body {
 }
 
 .overlay-text {
+  position: absolute;
+  top: 0;
+  padding: 40px 32px;
+  background-color: #4d5ae5;
+  height: 100%;
+  width: 100%;
+  transform: translateY(100%);
+  transform: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
@@ -486,6 +528,7 @@ body {
   color: #f4f4fd;
   text-align: center;
   padding: 40px 32px 64px 32px;
+
 }
 
 .overlay-img {
@@ -493,18 +536,24 @@ body {
   overflow: hidden;
 }
 
-.li-cards:hover .overlay {
+.li-cards:hover .overlay-text {
   transform: translateY(0);
+}
+
+.li-cards {
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .icons-div r {
   display: flex;
 }
+
 .team-container {
   display: flex;
 
   flex-direction: column;
 }
+
 .container-team {
   display: flex;
   gap: 24px;
