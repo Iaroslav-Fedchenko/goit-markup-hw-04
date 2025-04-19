@@ -183,7 +183,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 24px;
+  gap: 16px;
   width: 232px;
   height: 40px;
 }
@@ -230,16 +230,11 @@ body {
   transition-duration: 250ms;
 }
 .title-section {
-  /* background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
-    url("../images/people-office 1.png"); */
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1.png);
+    url(../images/people-office\ 1.jpg);
   padding-bottom: 60px;
   padding: 188px 0;
   background-size: cover;
@@ -317,10 +312,9 @@ body {
   text-align: center;
 }
 .list-soc-footer {
-  /* background-color: #ffffff; */
   font-weight: 500;
-  font-size: 20px;
-  line-height: 1.2;
+  font-size: 16px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
@@ -462,10 +456,12 @@ body {
 .footer-container {
   display: flex;
   gap: 120px;
+  align-items: baseline;
 }
 .footer-logo {
   display: flex;
   flex-direction: column;
+  margin-right: 120px;
 }
 .overlay {
   position: absolute;
