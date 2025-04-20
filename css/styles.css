@@ -128,11 +128,10 @@ body {
 
 .activa-link {
   color: #404bbf;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
-.link-stud {
-}
+.link-stud {}
 
 .activa-link::after {
   content: "";
@@ -184,7 +183,7 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
-  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link:hover,
@@ -197,7 +196,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  gap: 16px;
+  gap: 24px;
   width: 232px;
   height: 40px;
 }
@@ -211,12 +210,16 @@ body {
   justify-content: center;
   fill: #f4f4fd;
 }
+
 .border-foot:hover,
 .border-foot:focus {
   background-color: #31d0aa;
 }
-.border:hover {
+
+.border:hover,
+.border:focus {
   background-color: #404bbf;
+
 }
 
 .border {
@@ -226,13 +229,13 @@ body {
   border: 1px solid #cdcdd2;
   background-color: #4d5ae5;
   flex-wrap: wrap;
-  align-items: baseline;
+  align-items: center;
   justify-content: center;
   align-content: center;
   transition-property: translateY();
   transition-duration: 250ms;
   border-radius: 50%;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .border-foot {
@@ -248,17 +251,17 @@ body {
   transition-property: translateY();
   transition-duration: 250ms;
   border-radius: 50%;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .inst {
   width: 40px;
   height: 40px;
 }
+
 .title-section {
-  background-image: linear-gradient(
-      rgba(46, 47, 66, 0.7),
-      rgba(46, 47, 66, 0.7)
-    ),
+  background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)),
     url(../images/people-office.jpg);
   padding-bottom: 60px;
   padding: 188px 0;
@@ -522,6 +525,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 .overlay-img:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
